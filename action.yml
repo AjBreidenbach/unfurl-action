@@ -1,0 +1,9 @@
+name: Say hello action
+description: Say hello action
+author: Andrew
+inputs:
+  access_token: 
+    description: Token provided by unfurl.cloud
+runs:
+  using: node16
+  main: index.js

@@ -1,0 +1,13 @@
+name: Cypress CI
+
+on: [push]
+    
+jobs:
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        uses: AjBreidenbach/unfurl-action@master
+        with:
+          access_token: ${{secrets.UNFURL_TOKEN}}
